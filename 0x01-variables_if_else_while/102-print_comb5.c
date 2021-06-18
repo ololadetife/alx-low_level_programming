@@ -9,13 +9,34 @@
 */
 int main(void)
 {
-int number1 = 0;
-int comma = ',';
-while (number1 <=99)
+int j = 0;
+while (i <= 99)
 {
-putchar(number1++);
-putchar(comma);
+if (i != j)
+{
+int toPrint;
+if (j >= 0 && j <= 9)
+toPrint = 48
+else
+toPrint = j / 10 + 48;
+putchar(toPrint);
+putchar(j % 10 + 48);
 putchar(' ');
+if (i >= 0 && i <= 9)
+toPrint = 48;
+else
+toPrint = i / 10 + 48;
+putchar(toPrint);
+putchar(i % 10 + 48);
+if (j * 100 + i != 9899)
+{
+putchar(',');
+putchar(' ');
+}
+}
+i++;
+}
+j++;
 }
 putchar('\n');
 return (0);
