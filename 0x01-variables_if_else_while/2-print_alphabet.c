@@ -9,11 +9,11 @@
 */
 int main(void)
 {
-char x;
-for (x = 'a'; x <= 'z'; x++)
+char character;
+for (character = 'a' ; character <= 'z' ; character++)
 {
-putchar(x);
+putchar(character);
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
