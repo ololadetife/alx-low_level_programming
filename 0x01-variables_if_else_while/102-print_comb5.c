@@ -19,7 +19,7 @@ if (i != j)
 {
 int toPrint;
 if (j >= 0 && j <= 9)
-toPrint = 48
+toPrint = 48;
 else
 toPrint = j / 10 + 48;
 putchar(toPrint);
