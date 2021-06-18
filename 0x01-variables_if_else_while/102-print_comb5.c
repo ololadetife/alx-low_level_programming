@@ -10,6 +10,9 @@
 int main(void)
 {
 int j = 0;
+while (j <= 99)
+{
+int i = j;
 while (i <= 99)
 {
 if (i != j)
