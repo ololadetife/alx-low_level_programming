@@ -10,7 +10,7 @@
 int main(void)
 {
 int number1 = 0;
-int cimma = ',';
+int comma = ',';
 while (number1 <=99)
 {
 putchar(number1++);
