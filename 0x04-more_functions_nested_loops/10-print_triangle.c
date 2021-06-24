@@ -1,5 +1,4 @@
-  
-#include "holberton.h"
+ #include "holberton.h"
 
 /**
  * print_triangle - a function that prints a triangle
