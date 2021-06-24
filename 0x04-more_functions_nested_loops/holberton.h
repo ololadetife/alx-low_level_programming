@@ -6,4 +6,7 @@ int _isupper(int c);
 
 /* checks if c is digit */
 int _isdigit(int c);
+
+/* multiplies a and b */
+int mul(int a, int b);
 #endif
