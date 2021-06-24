@@ -1,17 +1,17 @@
 #include "holberton.h"                                                                                                                  
                                                                                                                                         
 /**                                                                                                                                     
-* print_numbers - prints numbers between 0 and 9                                                                                        
+* print_numbers - a function that prints the numbers, from 0 to 9                                                                                
 *                                                                                                                                       
 * Return:0-9 followed by newline                                                                                                                 
 */                                                                                                                                      
                                                                                                                                         
 void print_numbers(void)                                                                                                                
 {                                                                                                                                       
-int a;                                                                                                                                  
-for (a >= 0 ; a <= 9 ; a++)                                                                                                             
+int i;                                                                                                                                  
+for (i >= 0 ; i <= 9 ; i++)                                                                                                             
 {                                                                                                                                       
-_putchar(a = '0');                                                                                                                            
+_putchar(i + '0');                                                                                                                            
 }                                                                                                                                       
 _putchar('\n');                                                                                                                         
 }                                                                                                                                       
