@@ -5,15 +5,15 @@
  */
 void print_numbers(void)
 {
-	int i; /*Declaring statements*/
+	int i; 
 
 	i = 0;
-	while (i < 10)/*Start While*/
+	while (i < 10)
 	{
-		_putchar (i + '0'); /*print value i*/
+		_putchar (i + '0'); 
 		i++;
 	}
 
-	_putchar ('\n'); /*New line*/
+	_putchar ('\n'); 
 }                                                                                                                            
     
