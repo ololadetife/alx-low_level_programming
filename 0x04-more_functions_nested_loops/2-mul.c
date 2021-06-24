@@ -1,16 +1,13 @@
 #include "holberton.h"
 
 /**
-* mul - multiplies a and b
-* @a: integer to be tested
-* @b: integer to be tested
-* Return: 0
+* mul - a function that multiplies two integers
+* @a: first input
+* @b: second input
+* Return: multiplication result of the two integers
 */
 
 int mul(int a, int b)
 {
-int product;
-product = a * b;
-_putchar(product);
-return (0);
+return (a * b);
 }
