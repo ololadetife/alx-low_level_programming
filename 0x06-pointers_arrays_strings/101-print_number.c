@@ -1,49 +1,34 @@
 #include "holberton.h"
 /**
- * print_number - print numbers
- * @n: first parameter
- *
- * Description: depends on integer n passed
- * Return: Always(0) Success
+ * print_number - prints a number
+ * @n: Input number
  */
+
 void print_number(int n)
 {
-	if ((n < 0) && (n >= -9))
+	int res, temp, expo;
+
+	expo = 1;
+/*Check negatives*/
+	if (n >= 0)
+		res = n * -1;
+	else
 	{
+		res = n;
 		_putchar('-');
-		_putchar((n * -1) + '0');
-	}
-	else if (n <= -10)
-	{
-		_putchar('-');
-		_putchar(((n / 10) * -1) + '0');
-		_putchar(((n % 10)  * -1) + '0');
-	}
-	else if (n == 0)
-	{
-		_putchar(n + '0');
-	}
-	else if ((n > 0) && (n <= 9))
-	{
-		_putchar(n + '0');
-	}
-	else if ((n >= 10) && (n <= 99))
-	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if ((n >= 100) && (n <= 999))
-	{
-		_putchar((n / 100) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if ((n >= 1000) && (n <= 9999))
-	{
-		_putchar((n / 1000) + '0');
-		_putchar((n / 100) % 10 + '0');
-		_putchar((n / 10) % 10 + '0');
-		_putchar((n % 10) + '0');
 	}
 
+/*Initialize exponent variable*/
+	temp = res;
+	while (temp <= -10)
+	{
+		expo *= 10;
+		temp /= 10;
+	}
+/*Main */
+	while (expo >= 1)
+	{
+		_putchar(((res / expo) % 10) * -1 + '0');
+		expo /= 10;
+	}
 }
