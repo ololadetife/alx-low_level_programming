@@ -10,23 +10,15 @@
 
 int main(int argc, char *argv[])
 {
-int i;
-int mul = 0;
-printf("argc = %d\n", argc);
-printf("what is in argv[]\n");
-if (argc >= 1)
-{
-for (i = 0 ; i < argc ; i++)
-{
-printf("argv[%d] = %s\n", i, argv[i]);
-argv[] = atoi(argv[i]);
-mul = mul * argv[];
-}
-printf("Total = %d\n", mul);
-}
-else
-{
-printf("Error\n");
-}
-return (1);
+	int first, second;
+
+	if (argc == 3)
+	{
+		first = atoi(argv[1]);
+		second = atoi(argv[2]);
+		printf("%i\n", first * second);
+		return (0);
+	}
+	printf("Error\n");
+	return (1);
 }
