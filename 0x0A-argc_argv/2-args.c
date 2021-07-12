@@ -10,12 +10,18 @@
 
 int main(int argc, char *argv[])
 {
-int i;
-printf("argc = %d\n", argc);
-printf("what is in argv[]\n");
-for (i = 0 ; i < argc ; i++)
-{
-printf("argv[%d] = %s\n", i, argv[i]);
-}
-return (0);
+	int count = 0;
+
+	if (argc > 0)
+	{
+		/*WHILE - Print each arguments*/
+		while (count < argc)
+		{
+			printf("%s\n", argv[count]);
+			count++;
+		}
+
+	}
+
+	return (0);
 }
