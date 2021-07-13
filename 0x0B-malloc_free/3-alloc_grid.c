@@ -7,6 +7,7 @@
  * @height: height of array
  * Return: double pointer to multi-dimen array
  */
+
 int **alloc_grid(int width, int height)
 {
 	int **grid, r, c, **_grid;
