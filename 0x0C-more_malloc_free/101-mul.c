@@ -1,8 +1,3 @@
-/*
- * File: 101-mul.c
- * Author: Akintola, Mayode Mercy
- */
-
 #include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
