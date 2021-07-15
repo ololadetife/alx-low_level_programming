@@ -1,3 +1,8 @@
+/*
+ * File: 1-string_nconcat.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "holberton.h"
 #include <stdlib.h>
 
