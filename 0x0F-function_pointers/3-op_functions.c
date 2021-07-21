@@ -1,68 +1,73 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
- * op_add- returns sum
- * @a: first operand
- * @b: second operand
+ * op_add - adds a and b
+ * @a: first number
+ * @b: second number
  *
- * Return: returns sum
+ * Return: sum of a and b
  */
 int op_add(int a, int b)
 {
-return (a + b);
+	return (a + b);
 }
+
 /**
- * op_sub- returns difference
- * @a: first operand
- * @b: second operand
+ * op_sub - subtracts b from a
+ * @a: first number
+ * @b: second number
  *
- * Return: returns difference
+ * Return: difference of a and b
  */
 int op_sub(int a, int b)
 {
-return (a - b);
+	return (a - b);
 }
+
 /**
- * op_mul- returns product
- * @a: first operand
- * @b: second operand
+ * op_mul - multiplies a and b
+ * @a: first number
+ * @b: second number
  *
- * Return: returns product
+ * Return: multiplication of a and b
  */
 int op_mul(int a, int b)
 {
-return (a * b);
+	return (a * b);
 }
+
 /**
- * op_div- returns result of division
- * @a: first operand
- * @b: second operand
+ * op_div - divides a by b
+ * @a: first number
+ * @b: second number
  *
- * Return: returns result of division
+ * Return: integer division of a by b
  */
 int op_div(int a, int b)
 {
 	if (b == 0)
 	{
-	printf("Error\n");
-	exit(100);
+		printf("Error\n");
+		exit(100);
 	}
 	return (a / b);
 }
+
 /**
- * op_mod- returns remainder of divison
- * @a: first operand
- * @b: second operand
+ * op_mod - find the remainder of the division of a by b
+ * @a: first number
+ * @b: second number
  *
- * Return: returns remainder of divison
+ * Return: remainder of the division of a by b
  */
 int op_mod(int a, int b)
 {
 	if (b == 0)
 	{
-	printf("Error\n");
-	exit(100);
+		printf("Error\n");
+		exit(100);
 	}
 	return (a % b);
 }
