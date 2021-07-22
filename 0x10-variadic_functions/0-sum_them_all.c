@@ -9,24 +9,24 @@
 * @va_start: connects argument lists
 * @va_arg: gets data currently connected to argument
 * @va_end: stops argument 
-* @args: argument to use
-* Return: 0 if n equals zero
+* @ap:arguments 
+* Return: sum of the parameters
 */
 int sum_them_all(const unsigned int n, ...)
 {
-    int total;
-    int temp;
-    total = 0;
-    va_list args;
-    va_start(args, count);
-    for(n = 0; n < count; n++)
-    {
-        temp = va_arg(args, int);
-        total += temp;
-    }
-    va_end(args);
-    If (n == 0)
+if (n == 0)
 {
 return (0);
 }
+
+va_list ap;
+int sum;
+
+va_start (ap, count);         /* Initialize the argument list. */
+sum = 0;
+for (n = 0;  n < count; n++)
+    sum += va_arg (ap, int);    /* Get the next argument value. */
+
+  va_end (ap);                  /* Clean up. */
+  return sum;
 }
