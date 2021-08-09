@@ -1,4 +1,4 @@
-ifndef FILE_HOLBERTON
+#ifndef FILE_HOLBERTON
 #define FILE_HOLBERTON
 
 #include <sys/types.h>
